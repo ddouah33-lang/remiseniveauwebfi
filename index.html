@@ -1,23 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site web</title>
-    <link rel="stylesheet" href="./index.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kings League — Le foot réinventé</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="glow"></div>
 
-    <div class="rond">
-        <img src="./image.png" alt="">
+<nav>
+  <div class="brand display"><span class="crown">♛</span> Kings League</div>
+  <div class="navlinks">
+    <a href="#format">Règles</a>
+    <a href="#deroule">Déroulé</a>
+    <a href="#teams">Clubs</a>
+    <a href="#wildcard">Wildcard</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="kicker"><span class="dot"></span> Compétition de foot à 7</div>
+  <h1 class="display">Le football, <span class="accent">réécrit</span> pour aller plus vite.</h1>
+  <p class="hero-sub">Créée en 2022 par Gérard Piqué, la Kings League prend les règles du foot classique et les compresse : moins de joueurs, moins de temps mort, plus de coups de théâtre. Chaque match peut basculer en une décision.</p>
+  <div class="hero-actions">
+    <a href="#format" class="btn btn-primary">Découvrir le format</a>
+    <a href="#wildcard" class="btn btn-ghost">Tirer une wildcard</a>
+  </div>
+
+  <div class="stat-strip">
+    <div><div class="stat-num display">7v7</div><div class="stat-label">joueurs par équipe</div></div>
+    <div><div class="stat-num display">12</div><div class="stat-label">minutes / période</div></div>
+    <div><div class="stat-num display">0</div><div class="stat-label">hors-jeu</div></div>
+    <div><div class="stat-num display">1</div><div class="stat-label">carte secrète / match</div></div>
+  </div>
+</header>
+
+<section id="format">
+  <div class="section-head">
+    <div class="kicker"><span class="dot"></span> Le format</div>
+    <h2 class="display">Les règles qui changent tout</h2>
+    <p>Le squelette reste celui du foot : un ballon, deux buts, onze — pardon, sept joueurs. Mais une série d'ajustements suffit à transformer complètement le rythme du jeu.</p>
+  </div>
+  <div class="rules-grid">
+    <div class="rule-card">
+      <div class="rule-num display">01</div>
+      <h3>7 contre 7</h3>
+      <p>Un gardien et six joueurs de champ par équipe, avec un effectif plus large sur le banc pour faire tourner l'équipe.</p>
     </div>
-    <div class="rond">
-        <img src="./image.png" alt="">
+    <div class="rule-card">
+      <div class="rule-num display">02</div>
+      <h3>Trois périodes de 12 min</h3>
+      <p>Le temps de jeu est effectif : chaque arrêt met le chrono en pause, comme au basket, donc chaque minute compte vraiment.</p>
     </div>
+    <div class="rule-card">
+      <div class="rule-num display">03</div>
+      <h3>Pas de hors-jeu</h3>
+      <p>La règle du hors-jeu est supprimée : les attaquants peuvent se positionner librement, ce qui ouvre le jeu vers l'avant.</p>
+    </div>
+    <div class="rule-card">
+      <div class="rule-num display">04</div>
+      <h3>La carte secrète</h3>
+      <p>Chaque équipe tire une carte avant le match : un avantage temporaire (joker, but à distance, un joueur en plus) révélé à un moment choisi par son capitaine.</p>
+    </div>
+    <div class="rule-card">
+      <div class="rule-num display">05</div>
+      <h3>Carton = expulsion sèche</h3>
+      <p>Un carton (jaune direct ou rouge) sort le joueur du terrain pour le reste de la période en cours, laissant son équipe en infériorité.</p>
+    </div>
+    <div class="rule-card">
+      <div class="rule-num display">06</div>
+      <h3>Pas de match nul</h3>
+      <p>Si le score est à égalité à la fin des trois périodes, la rencontre se termine obligatoirement par un tir au but décisif.</p>
+    </div>
+    <div class="rule-card">
+      <div class="rule-num display">07</div>
+      <h3>Le tir à 1 contre 1</h3>
+      <p>Pas de séance de penalties classique : un duel face au gardien, ballon en mouvement, sur toute la largeur du terrain, ballon lancé depuis le milieu de terrain.</p>
+    </div>
+    <div class="rule-card">
+      <div class="rule-num display">08</div>
+      <h3>Un président par club</h3>
+      <p>Chaque équipe est portée par une personnalité publique qui recrute et négocie, et qui a parfois le droit d'entrer sur le terrain quelques minutes.</p>
+    </div>
+  </div>
+</section>
 
+<section id="deroule">
+  <div class="section-head">
+    <div class="kicker"><span class="dot"></span> Pas à pas</div>
+    <h2 class="display">Comment se joue un match, de A à Z</h2>
+    <p>Voici l'enchaînement type d'une rencontre de Kings League, du tirage avant le coup d'envoi jusqu'au tir décisif.</p>
+  </div>
+  <div class="rules-grid">
+    <div class="rule-card">
+      <div class="rule-num display">A</div>
+      <h3>Tirage de la carte secrète</h3>
+      <p>Avant le coup d'envoi, chaque équipe reçoit sa carte au hasard. Elle reste cachée jusqu'à ce que le capitaine décide de la jouer.</p>
+    </div>
+    <div class="rule-card">
+      <div class="rule-num display">B</div>
+      <h3>1ère période (12 min)</h3>
+      <p>Coup d'envoi classique. Le chrono tourne uniquement quand le ballon est en jeu.</p>
+    </div>
+    <div class="rule-card">
+      <div class="rule-num display">C</div>
+      <h3>2ᵉ et 3ᵉ périodes</h3>
+      <p>Même format, avec la possibilité pour chaque équipe d'activer sa carte secrète à n'importe quel moment.</p>
+    </div>
+    <div class="rule-card">
+      <div class="rule-num display">D</div>
+      <h3>Fin du temps réglementaire</h3>
+      <p>Si un score départage les deux équipes, le match s'arrête là. En cas d'égalité, on passe à l'étape suivante.</p>
+    </div>
+    <div class="rule-card">
+      <div class="rule-num display">E</div>
+      <h3>Le tir décisif</h3>
+      <p>Chaque équipe désigne ses tireurs pour le duel à 1 contre 1 face au gardien adverse, jusqu'à ce qu'un vainqueur se dégage.</p>
+    </div>
+  </div>
+</section>
 
+<section id="teams">
+  <div class="section-head">
+    <div class="kicker"><span class="dot"></span> Les clubs</div>
+    <h2 class="display">Des présidents, pas des propriétaires</h2>
+    <p>Chaque équipe porte l'identité de son président. Voici quelques clubs emblématiques de la ligue espagnole d'origine.</p>
+  </div>
+  <div class="teams-grid">
+    <div class="team" style="--team-color:#f5c400"><div class="initial">K</div><h3>Kunisports</h3><p>Président : Ibai Llanos</p></div>
+    <div class="team" style="--team-color:#00e5ff"><div class="initial">P</div><h3>PIO FC</h3><p>Président : Gérard Piqué</p></div>
+    <div class="team" style="--team-color:#7b2ff7"><div class="initial">R</div><h3>Rayo de Barcelona</h3><p>Président : Ibai / DjMaRiiO</p></div>
+    <div class="team" style="--team-color:#ff5470"><div class="initial">U</div><h3>Ultimate Móstoles</h3><p>Président : TheGrefg</p></div>
+    <div class="team" style="--team-color:#4dd68c"><div class="initial">X</div><h3>XBuyer Team</h3><p>Président : ElXokas</p></div>
+    <div class="team" style="--team-color:#ffa64d"><div class="initial">1</div><h3>1K FC</h3><p>Président : Perxitaa</p></div>
+  </div>
+</section>
 
-    <script src="./index.js"></script>
-    
+<section id="wildcard">
+  <div class="section-head">
+    <div class="kicker"><span class="dot"></span> Le tirage</div>
+    <h2 class="display">Teste ta propre carte secrète</h2>
+    <p>Chaque match démarre avec une carte imprévisible. Tire la tienne pour voir quel avantage ton équipe aurait reçu.</p>
+  </div>
+
+  <div class="wildcard-box">
+    <div>
+      <button id="wildcardBtn" class="btn btn-primary">Tirer une carte</button>
+      <p class="hint">Basé sur des mécaniques réellement utilisées dans la ligue.</p>
+    </div>
+    <div class="card-display" id="cardDisplay">
+      <span class="card-tag">En attente</span>
+      <div class="card-title">Clique pour tirer</div>
+      <p class="card-desc">Ta carte secrète apparaîtra ici.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>Site de fan non officiel — Kings League</span>
+  <span>Fait avec HTML, CSS &amp; JS</span>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
